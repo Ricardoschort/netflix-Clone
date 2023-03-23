@@ -1,0 +1,38 @@
+.navbarContainer{
+  background-color: black;
+  width: 100%;
+  padding: 7px 0px;
+  display: flex; 
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0%;
+  z-index: 5;
+
+
+}
+.hide{
+  background-color: transparent;
+  position: sticky;
+  top: 0;
+}
+
+.logoContainer img{
+  width: 100px;
+}
+.menu{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+}
+.menu img{
+  width: 60px;
+}
+.iconNoti{
+  font-size: 25px;
+}
+
+.menu h5{
+  color: aliceblue;
+}
