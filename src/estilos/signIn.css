@@ -1,0 +1,28 @@
+.signInContainer{
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  width: 450px;
+  height: 450px;
+  background-color: rgba(0, 0, 0, 0.404);
+  
+}
+.signInContainer h2{
+  color: aliceblue;
+  font-size: 28px;
+  margin: 40px;
+}
+.signInContainer form{
+  margin: 0px 40px;
+}
+
+.signHelp{
+  margin: 20px 40px;
+}
+.signHelp a{
+  text-decoration: none;
+  color: rgb(146, 145, 144);
+}
+.signHelp a:hover{
+  text-decoration: underline;
+}
