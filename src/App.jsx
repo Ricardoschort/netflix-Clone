@@ -6,6 +6,7 @@ import Profile from './Paginas/Profile'
 import PayPal from './Paginas/PayPal'
 import NotFound from './Paginas/NotFound'
 import SignIn from './Paginas/SignIn'
+import EditProfile from './Paginas/EditProfile'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Route path="paypal" element={<PayPal />} />
       <Route path="login" element={<Login />} />
       <Route path="signIn" element={<SignIn />} />
+      <Route path="edit" element={<EditProfile />} />
       <Route path="*" element={<NotFound />} />
       <Route path="/" element={<Home />} />   
 
