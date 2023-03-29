@@ -20,6 +20,11 @@
 }
 .loginContainer h2{
   font-size: 2.5rem;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing :1.1px
 }
 
+.loginContainer p{
+  font-size: 1.5rem;
+  font-weight: 600;
+}

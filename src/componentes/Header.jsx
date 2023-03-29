@@ -4,6 +4,7 @@ import { BsFillCaretDownFill, BsSearch } from "react-icons/bs";
 import { MdOutlineNotificationsNone } from "react-icons/md";
 import { useState, useEffect } from 'react';
 import BarraNav from './BarraNav';
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -11,6 +12,7 @@ import BarraNav from './BarraNav';
 function Header() {
 
   const [show, setShow] = useState(false)
+  const navigate = useNavigate()
 
   const trasparentHeader = () => {
     if (window.scrollY > 100) {
@@ -35,8 +37,9 @@ function Header() {
         <BsSearch color='white' />
         <h5>Search</h5>
         <MdOutlineNotificationsNone color='white' className='iconNoti' />
-        <img src={avatar} alt="avatar" />
-        <BsFillCaretDownFill color='white' />
+        <img onClick={()=> navigate("profile")}
+             src={avatar} alt="avatar" />
+        <BsFillCaretDownFill color='white' onClick={()=> navigate("edit")} />
       </div>
     </nav>
 

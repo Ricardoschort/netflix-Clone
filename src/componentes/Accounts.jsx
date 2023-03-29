@@ -1,7 +1,6 @@
 import '../estilos/accounts.css'
 
 function Accounts({ name, image }) {
-  console.log(name, image)
   return (
 
     <>

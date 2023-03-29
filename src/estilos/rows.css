@@ -1,0 +1,41 @@
+.containerRows{
+  background-color: transparent;
+  margin: 15px 40px;
+
+}
+
+.containerRows h2{
+  color: aliceblue;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 24px;
+  padding: 10px 10px;
+
+}
+.containerRows .posted{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.containerRows .posted img{
+  object-fit: contain;
+
+}
+.poster{
+  max-height: 12rem;
+  transition: all 60ms ease-out;
+  margin-left: 8px;
+}
+.posterLarge{
+  max-height: 16rem;
+}
+
+.poster:hover{
+  transform: scale(1.1);
+  
+}
+.containerRows .posted::-webkit-scrollbar {
+  display: block;
+ 
+}

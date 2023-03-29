@@ -8,6 +8,13 @@
 .accountContainer img{
   width: 100%;
   object-fit: cover;
+  cursor: pointer;
+  transition: all 0.5ms ease-in-out;
+  
+}
+
+.accountContainer img:hover{
+  transform: scale(1.2);
   
 }
 

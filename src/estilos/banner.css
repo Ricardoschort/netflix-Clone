@@ -1,35 +1,44 @@
 .banner{
-  background-image: url(../assets/MoviePoster.png);
   position:relative;
   object-fit: contain;
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: top center;
+
 }
+.bannerGradent{
+  position: absolute;
+  top: 70vh;
+  background-image: linear-gradient(180deg,transparent,rgba(37,37,37,0.61),#141414);
+  width: 100%;
+  bottom: 0px;
+
+
+}
+
 .infoBanner{
-  width: 620px;
+  width: 420px;
   position: absolute;
   color: white;
-  left: 80px;
-  top: 190px;
+  left: 50px;
+  top: 150px;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 .infoBanner h2{
-  font-size: 3rem;
+  font-size: 2.4rem;
   text-transform: capitalize;
   font-weight: bold;
 
 }
 
-.infoBanner h3{
-  font-size: 25px;
-}
+
 .infoBanner p{
   font-size: 20px;
   line-height: 25px;
+  font-weight: 600;
 }
 
 .buttonsBanner button{

@@ -4,6 +4,7 @@ import BarraNav from '../componentes/BarraNav'
 import '../estilos/signIn.css'
 import { auth } from '../firebase';
 import { createUserWithEmailAndPassword ,signInWithEmailAndPassword} from "firebase/auth";
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -11,18 +12,15 @@ function SignIn() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("")
 
+  const navigate = useNavigate()
 
   const signIn = e => {
     e.preventDefault();
     signInWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
-        // Signed in
-        const user = userCredential.user;
-        // ...
-      })
+      .then((authUser) => navigate('/'))
       .catch((error) => {
         const errorCode = error.code;
-        const errorMessage = error.message;
+        alert(error.message);
       });
 
 
@@ -30,14 +28,11 @@ function SignIn() {
   const signUp = e => {
     e.preventDefault()
     createUserWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
-        // Signed in
-        const user = userCredential.user;
-        // ...
-      })
+    .then((authUser) => navigate('/'))
+      
       .catch((error) => {
         const errorCode = error.code;
-        const errorMessage = error.message;
+        alert(error.message);
         // ..
       });
   }
@@ -48,14 +43,14 @@ function SignIn() {
       <div className='signInContainer'>
         <h2>Sign In</h2>
         <form action=''>
-          <InputLogin primary white type='email'
+          <InputLogin primary  type='email'
             placeholder='escribe el correo'
             value={email}
             onChange={e => setEmail(e.target.value)}
           >
 
           </InputLogin>
-          <InputLogin primary white type='password'
+          <InputLogin primary  type='password'
             placeholder='contraseña'
             value={password}
             onChange={e => setPassword(e.target.value)}

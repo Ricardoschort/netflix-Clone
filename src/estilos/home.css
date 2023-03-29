@@ -1,0 +1,8 @@
+.homeContainer{
+  position: relative;
+}
+article{
+  position: absolute;
+  bottom: -960px;
+  padding-bottom: 17px;
+}

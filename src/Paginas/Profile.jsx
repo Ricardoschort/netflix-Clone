@@ -22,7 +22,7 @@ function Profile() {
       }  
       <div className='btnProfileAddContainer'>
         <button className='btnProfileAdd'> <img src={add} alt="" /></button>
-          <span>editar perfil</span>
+        <span>editar perfil</span>
       </div>
      
        </div>
