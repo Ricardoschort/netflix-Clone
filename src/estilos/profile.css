@@ -1,6 +1,5 @@
 .profileContainer{
   background-color: black;
-  width: 100%;
   height: 95vh;
   padding: 15px 20px;
   position: relative;
@@ -14,16 +13,16 @@
   margin-top: 80px;
 }
 .profileInfo h2{
-  font-size: 3rem;
+  font-size: 2.6rem;
   color: aliceblue;
   font-weight: 600;
 }
 
 .profiles {
-  width: 660px;
   height: 160px;
   display: flex;
-  gap: 25px;
+  justify-content: center;
+  gap: 15px;
   margin: 40px auto 0px
 
 }
@@ -54,7 +53,6 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  justify-content: center;
   align-items: center;
   cursor: pointer;
 
@@ -71,4 +69,38 @@
   border: none;
   cursor: pointer;
 
+}
+@media (max-width:860px){
+  .profiles{
+    flex-wrap: wrap;
+    height: 500px;
+  }
+  .profileInfo{
+    margin-top: 10px;
+  }
+  .profileInfo h2{
+    font-size: 1.6rem;
+  }
+ .profileBtn{
+  bottom: 80px;
+ }
+
+}
+@media (max-width:481px){
+  .btnProfileAddContainer{
+    margin-top: 0px;
+  }
+}
+@media (max-width:480px){
+  .btnProfileAdd img{
+    width: 90px;
+   }
+   .profileBtn{
+    bottom: 120px;
+   }
+   .profiles{
+    flex-wrap: wrap;
+    height: 370px;
+  }
+  
 }

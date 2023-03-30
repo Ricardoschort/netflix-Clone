@@ -9,11 +9,11 @@
 }
 
 .loginInfoContainer{
-  width: 550px;
+  max-width: 550px;
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: 160px auto;
+  margin: 160px  auto;
   gap: 20px;
   color: aliceblue;
 
@@ -27,4 +27,17 @@
 .loginContainer p{
   font-size: 1.5rem;
   font-weight: 600;
+}
+
+@media (max-width:450px) {
+  .loginContainer{
+    padding: 0px 15px;
+  }
+  .loginContainer h2{
+    font-size: 1.6rem;
+  }
+  .loginContainer p{
+    font-size: 1.2rem;
+  }
+   
 }

@@ -20,6 +20,9 @@ export const Button = styled.button`
     color: ${props => props.secundary ? "black" : "aliceblue"};
     font-size: 16px;
     width:${({wide})=> handleWide(wide)};
+    @media (max-width: 450px) {
+        width: 90px;
+        padding:7px;
 `;
 export const InputLogin = styled.input`
     border: none;
@@ -37,4 +40,7 @@ export const InputLogin = styled.input`
         font-size:14px;
         letter-spacing :1.1px
     }
+    @media (max-width: 450px) {
+        width: 220px;
  `
+

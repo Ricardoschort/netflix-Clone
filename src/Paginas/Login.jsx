@@ -22,7 +22,7 @@ function Login() {
         <p>Puedes disfrutar con tu familia, solo o con amigos</p>
         <div className='btnLoginInfo'>
           <form action="">
-            <InputLogin borderNone white whitePlace type="email" placeholder='escribe el correo' ></InputLogin>
+            <InputLogin className='inputLogin' borderNone white whitePlace type="email" placeholder='escribe el correo' ></InputLogin>
 
             <Button borderNone> Get stared</Button>
           </form>

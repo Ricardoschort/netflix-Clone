@@ -14,7 +14,6 @@ function Home() {
           <Rows title ={"Populares de netflix"} fetchUrl={requests.fetchNeflixOriginals}/>
           <Rows title ={"Pronto a salir"} fetchUrl={requests.fetchToComing}/>
           <Rows title ={"Exitosas"} fetchUrl={requests.fetchTredding}/>
-
       </article>
     </div>
 
