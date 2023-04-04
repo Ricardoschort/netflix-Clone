@@ -37,9 +37,9 @@ function Header() {
         <BsSearch color='white' />
         <h5>Search</h5>
         <MdOutlineNotificationsNone color='white' className='iconNoti' />
-        <img onClick={()=> navigate("profile")}
+        <img onClick={()=> navigate("/profile")}
              src={avatar} alt="avatar" />
-        <BsFillCaretDownFill color='white' onClick={()=> navigate("edit")} />
+        <BsFillCaretDownFill color='white' onClick={()=> navigate("/edit")} />
       </div>
     </nav>
 

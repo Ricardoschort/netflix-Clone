@@ -15,7 +15,7 @@ function Login() {
       <BarraNav>
         <Button
           onClick={handleNav}
-          primary >Sign in</Button>
+          primary >Iniciar</Button>
       </BarraNav>
       <div className="loginInfoContainer">
         <h2>Ilimitadas peliculas, series y documentales</h2>
@@ -24,7 +24,7 @@ function Login() {
           <form action="">
             <InputLogin className='inputLogin' borderNone white whitePlace type="email" placeholder='escribe el correo' ></InputLogin>
 
-            <Button borderNone> Get stared</Button>
+            <Button borderNone>Empezar</Button>
           </form>
         </div>
       </div>

@@ -1,8 +1,18 @@
 .homeContainer{
   position: relative;
 }
+
 article{
   position: absolute;
   bottom: -960px;
   padding-bottom: 17px;
+
+}
+
+@media (max-width:450px) {
+  .article{
+    bottom: -850px;
+  }
+  
+
 }

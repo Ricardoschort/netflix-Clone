@@ -12,7 +12,7 @@ function EditProfile() {
 
   const handleExit =()=>{
     auth.signOut();
-    navigate('/login')
+    navigate('/app/login')
     
   }
 
